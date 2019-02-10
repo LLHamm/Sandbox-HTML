@@ -1,5 +1,18 @@
 body {
+    font-family: "Lora";
+}
+
+#header {
+    background-color: darkred;
+    color: white;    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.code {
     font-family: "Inconsolata";
+    color: darkslateblue;
 }
 
 .padding {
@@ -12,6 +25,10 @@ body {
     background-color: lightgrey;
 }
 
+.section-1 {
+    position: relative;
+}
+
 .pos-relative {
     position: relative;
     background-color: #f5f5f5;
@@ -20,4 +37,6 @@ body {
 .pos-absolute {
     position: absolute;
     background-color: #fff4e3;
+    top: 35px;
+    left: 80px;
 }

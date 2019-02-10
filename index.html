@@ -4,24 +4,29 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora" rel="stylesheet">
 </head>
 
 <body>
+
+    <section id="header">
+        <p>This is a fun line that sticks with us as we scroll down, because the container has position: sticky; </p>
+    </section>
+
     <div class="padding">
         <p>Padding:</p>
         <p>Padding creates extra space within an element. In contrast, margin creates extra space around an element.</p>
         <p>Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. 
             Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended 
             life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.</p>
-        <p>
-            .padding {
-            padding: 5%;
-            background-color: grey;
+        <p class="code">
+            .padding {<br>
+            padding: 5%;<br>
+            background-color: grey;<br>
             }
         </p>
 
-        <p></p>
+        <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Mozilla's position doc</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block documentation</a> for more information.</p>
     </div>
 
     <div class="margin">
@@ -29,31 +34,89 @@
         <p>Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. 
             Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended 
             life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.</p>
-        <p>
-            .margin {
-            margin: 5%;
-            background-color: lightgrey;
+        <p class="code">
+            .margin {<br>
+            margin: 5%;<br>
+            background-color: lightgrey;<br>
             }
         </p>
-        <p></p>
     </div>
 
-    <div>
+    <section class="section-1">
+        <H1>Section 1</H1>
         <div class="pos-relative">
             <p>This is relatively positioned. It partakes in the document flow.
             </p>
         </div>
         <div class="pos-absolute">
-            <p>This is absolutely positioned.
+            <p>This paragraph is absolutely positioned, in section 1. Its top and bottom are relative to section 1, because <i>section 1 is positioned relative!</i> 
             </p>
         </div>
         <div class="pos-relative">
-                <p>This is relatively positioned. It partakes in the document flow.
-                </p>
-            </div>
-        
-    </div>
+            <p>This is relatively positioned. It partakes in the document flow, but as you can see, it is blissfully unaware of the absolutely positioned paragraph.
+            </p>
+        </div>        
+    </section>
 
+    <section class="section-2">
+        <H1>Section 2</H1>
+        <div class="pos-relative">
+            <p>This is relatively positioned. It partakes in the document flow. Our absolutely positioned line is at the top of the document, because Section 2 has no position value. 
+            </p>
+        </div>
+        <div class="pos-absolute">
+            <p>This paragraph is absolutely positioned, in section 2. Its top and bottom are relative to the page body, because <i>section 2 has no position value</i> (it's not even mentioned in the CSS)!
+            </p>
+        </div>
+        <div class="pos-relative">
+            <p>This is relatively positioned. It partakes in the document flow. As you can see, it is also blissfully unaware of the absolutely positioned paragraph. 
+            </p>
+        </div>        
+    </section>
+
+
+    <section class="section-2">
+            <H1>Section 2</H1>
+            <div class="pos-relative">
+                <p>This is relatively positioned. It partakes in the document flow.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>
+                <p> Just a bunch of lines to allow us to scroll down.</p>                
+            </div>            
+        </section>
 </body>
 
 </html>
