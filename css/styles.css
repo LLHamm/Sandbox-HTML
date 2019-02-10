@@ -1,0 +1,13 @@
+body {
+    font-family: "Inconsolata";
+}
+
+.padding {
+    background-color: grey;
+    padding: 5%;
+}
+
+.margin {
+    margin: 5%;
+    background-color: lightgrey;
+}
