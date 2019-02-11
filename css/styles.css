@@ -1,7 +1,8 @@
 body {
     font-family: "Lora";
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+    background-color: #f5f5f5;  
 }
 
 #header {
@@ -17,11 +18,21 @@ body {
 .code {
     font-family: "Inconsolata";
     color: darkslateblue;
+    line-height: 0.1;
+}
+
+.indent {
+    text-indent: 1%;    
 }
 
 .padding {
+    color: white;
     background-color: grey;
-    padding: 5%;
+    padding: 30px;
+}
+
+.padding .code {
+    color: lightblue;
 }
 
 .margin {
@@ -29,18 +40,26 @@ body {
     background-color: lightgrey;
 }
 
+.text-section {
+    margin: 0 0;
+    padding: 30px;
+    padding-bottom: 1rem;
+    background-color: #f5f5f5;
+}
+
 .section-1 {
     position: relative;
+    background-color: white;    
 }
 
 .pos-relative {
-    position: relative;
-    background-color: #f5f5f5;
+    position: relative;    
 }
 
 .pos-absolute {
     position: absolute;
     background-color: #fff4e3;
-    top: 35px;
-    left: 100px;
+    top: 145px;    
+    left: 150px;
+    padding: 0 10px;
 }

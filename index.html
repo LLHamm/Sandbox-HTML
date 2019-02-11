@@ -14,35 +14,51 @@
     </section>
 
     <div class="padding">
-        <p>Padding:</p>
+        <h2>Padding:</h2>
         <p>Padding creates extra space within an element. In contrast, margin creates extra space around an element.</p>
         <p>Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. 
             Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended 
             life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.</p>
-        <p class="code">
-            .padding {<br>
-            padding: 5%;<br>
-            background-color: grey;<br>
-            }
-        </p>
-
+        <p class="code">.padding {</p>
+        <p class="code indent">padding: 5%;</p>
+        <p class="code indent">background-color: grey;</p>
+        <p class="code">}</p>
+        <br>
+        <p class="code">.padding .code { </p>
+        <p class="code indent">color: lightblue; </p>
+        <p class="code">} </p>
+        <br>
         <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Mozilla's position doc</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block documentation</a> for more information.</p>
     </div>
+    <section class="text-section">
+        <p class="code">body {</p>
+        <p class="code indent">font-family: "Lora";</p>
+        <p class="code indent">margin: 0;</p>
+        <p class="code indent">padding: 0;</p>
+        <p class="code indent">background-color: #f5f5f5;</p>
+        <p class="code">}</p>
+        <p class="code"></p>
+
+        <p class="code">.text-section {</p>
+        <p class="code indent">margin: 0 0;</p>
+        <p class="code indent">padding: 5%;</p>
+        <p class="code indent">padding-bottom: 1rem;</p>
+        <p class="code indent">background-color: #f5f5f5;</p>
+        <p class="code">}</p>
+    </section>
 
     <div class="margin">
-        <p>Margin:</p>
+        <h2>Margin:</h2>
         <p>Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. 
             Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended 
             life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.</p>
-        <p class="code">
-            .margin {<br>
-            margin: 5%;<br>
-            background-color: lightgrey;<br>
-            }
-        </p>
+        <p class="code">.margin {</p>
+        <p class="code indent">margin: 5%;</p>
+        <p class="code indent">background-color: lightgrey;</p>
+        <p class="code"></p>}</p>
     </div>
 
-    <section class="section-1">
+    <section class="section-1 text-section">
         <H1>Section 1</H1>
         <div class="pos-relative">
             <p>This is relatively positioned. It partakes in the document flow.
@@ -54,29 +70,47 @@
         </div>
         <div class="pos-relative">
             <p>This is relatively positioned. It partakes in the document flow, but as you can see, it is blissfully unaware of the absolutely positioned paragraph.
-            </p>
-        </div>        
+            </p>            
+        </div>  
+        <br>
+        <br>
+        <p class="code">.text-section { </p>
+        <p class="code indent">margin: 0 0; </p>
+        <p class="code indent">padding: 0 5%; </p>
+        <p class="code indent">background-color: #f5f5f5;</p>
+        <p class="code">}</p>
+        <br>
+        <p class="code">.section-1 {</p>
+        <p class="code indent">position: relative; </p>
+        <p class="code indent">background-color: white;</p>
+        <p class="code">}</p>
     </section>
 
-    <section class="section-2">
+    <section class="section-2 text-section">
         <H1>Section 2</H1>
         <div class="pos-relative">
             <p>This is relatively positioned. It partakes in the document flow. Our absolutely positioned line is at the top of the document, because Section 2 has no position value. 
             </p>
         </div>
         <div class="pos-absolute">
-            <p>This paragraph is absolutely positioned, in section 2. Its top and bottom are relative to the page body, because <i>section 2 has no position value</i> (it's not even mentioned in the CSS)!
+            <p>This paragraph is absolutely positioned, <b>all the way down in section 2!</b> Its top and bottom are relative to the page body, because <i>section 2 has no position value</i> (it's not even mentioned in the CSS)!
             </p>
         </div>
         <div class="pos-relative">
-            <p>This is relatively positioned. It partakes in the document flow. As you can see, it is also blissfully unaware of the absolutely positioned paragraph. 
-            </p>
-        </div>        
+            <p>This is relatively positioned. It partakes in the document flow. As you can see, it is also blissfully unaware of the absolutely positioned paragraph that, in the HTML flow, was created directly hereabove,
+                but appears near the top of the page. 
+            </p>            
+        </div>  
+        <p class="code">.text-section { </p>
+        <p class="code indent">margin: 0 0; </p>
+        <p class="code indent">padding: 0 5%; </p>
+        <p class="code indent">background-color: #f5f5f5; </p>
+        <p class="code">}</p>
     </section>
 
 
-    <section class="section-2">
-            <H1>Section 2</H1>
+    <section class="section-2 text-section">
+            <H2>Scroll stuff</H2>
             <div class="pos-relative">
                 <p>This is relatively positioned. It partakes in the document flow.</p>
                 <p> Just a bunch of lines to allow us to scroll down.</p>
